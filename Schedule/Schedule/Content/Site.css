@@ -1,0 +1,202 @@
+﻿body{
+    margin:0;
+}
+
+.vertical-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.error-message {
+    background: #eeb3b3;
+    outline: 1px solid rgba(255, 0, 0, 0.57);
+    color: #fff;
+    width: calc(100% - 100px);
+    margin: 10px auto;
+    display: none;
+}
+
+    .error-message .message {
+        margin: auto;
+        text-align: center;
+        padding-top: 15px;
+        font-weight: 800;
+        padding-bottom: 15px;
+    }
+
+input:focus, button:focus{
+    outline: 0;
+}
+
+.schedule-main {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-spacing: 0;
+}
+
+.menu-block{
+    height:100%;
+    width:30%;
+    background:#808080;
+    vertical-align:top;
+}
+
+.menu-cell {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    background: #9f9f9f;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin:2px;
+    cursor:pointer;
+}
+
+  .menu-cell:hover{
+      background:#e6461b;
+  }
+
+    .menu-cell.active  {
+        background: #e6461b;
+    }
+
+.schedule-cell{
+    background:#fff;
+    width:100%;
+    height:20%;
+    float:left;
+}
+
+.schedule-cell:nth-child(2n+1){
+    background: #cdf3fa;
+}
+
+.schedule-day-time {
+    width: 15%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    float:left;
+}
+
+.schedule-day-time p{
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    font-weight: 800;
+}
+
+.schedule-day-time-text {
+    position: relative;
+    top: calc(50% - 27px);
+}
+
+.schedule-cell .lesson-name {
+    margin: 0;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    margin-top: -15px;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.schedule-cell .teachers {
+    position: relative;
+    top: 50%;
+    text-align: center;
+    font-style: italic;
+}
+
+.schedule-cell .teachers a{
+    color: #bf7f7f;
+}
+
+    .schedule-cell .teachers a:hover {
+        color: #7e5454;
+    }
+
+.schedule-cell .groups {
+    position: relative;
+    top: 50%;
+    text-align: center;
+    font-style: italic;
+}
+
+.schedule-block .loader {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    background-image: url(/img/Pedro_luis_romani_ruiz.gif);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    display:none;
+}
+
+.button-menu-block {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    background: #9f9f9f;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.button-menu-block:hover{
+   background: #bba5a5;
+}
+
+.stub{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:rgba(0, 0, 0, 0.40);
+    top:0;
+    display:none;
+    cursor:pointer;
+}
+
+.modal-info {
+    width: 600px;
+    height: 210px;
+    position: fixed;
+    z-index: 2;
+    top: calc(50% - 105px);
+    left: calc(50% - 310px);
+    background: #fff;
+    padding: 20px;
+    border-radius: 40px;
+    display:none;
+}
+
+.modal-info table{
+    width:100%;
+}
+
+.modal-info input{
+    height: 30px;
+    width: calc(100% - 28px);
+    padding: 0 4px;
+    background: rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(130, 123, 123, 0.88);
+    cursor:default;
+}
+
+.modal-info p{
+    text-align: center;
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: 600;
+    cursor:default;
+}
+
+.modal-info tr td:first-child{
+    width: 20%;
+}
+

@@ -1,0 +1,45 @@
+﻿.authorization-logo {
+    margin: auto;
+    width: 200px;
+}
+
+    .authorization-logo img {
+        width: 100%;
+    }
+
+.authorization-form {
+    width: 600px;
+    border: 1px solid #2e9f42;
+    margin: auto;
+    padding: 10px 0;
+}
+
+    .authorization-form input, .authorization-form button {
+        width: calc(100% - 110px);
+        margin: 10px 50px;
+        height: 30px;
+        padding: 1px 5px;
+    }
+
+        .authorization-form input:focus {
+            outline: rgba(46, 159, 66, 0.23) auto 5px;
+        }
+
+    .authorization-form button {
+        background: #2e9f42;
+        text-transform: uppercase;
+        border: 0;
+        color: #fff;
+        font-weight: 600;
+        width: calc(100% - 98px);
+        cursor: pointer;
+    }
+
+        .authorization-form button:hover {
+            background: rgba(46, 159, 66, 0.73);
+        }
+
+.vertical-center {
+    margin-left: -301px;
+    margin-top: -305px;
+}

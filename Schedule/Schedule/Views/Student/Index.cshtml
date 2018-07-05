@@ -1,0 +1,147 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="namepage" content="Student"/>
+    <title>Student</title>
+    <link rel="stylesheet" href="/Content/Site.css" />
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <script src="~/Scripts/SelectDay.js"></script>
+    <script src="~/Scripts/modal.js"></script>
+</head>
+<body>
+    <table class="schedule-main">
+        <tr>
+            <td class="menu-block">
+                <div class="menu-cell" data-day="1">Понедельник</div>
+                <div class="menu-cell" data-day="2">Вторник</div>
+                <div class="menu-cell" data-day="3">Среда</div>
+                <div class="menu-cell" data-day="4">Четверг</div>
+                <div class="menu-cell" data-day="5">Пятница</div>
+            </td>
+            <td class="schedule-block" rowspan="2">
+
+                <div class="schedule-cell">
+                    <div class="schedule-day-time" 
+                         data-start="08:00|08:00"
+                         data-end="09:25|09:25">
+                        <div class="schedule-day-time-text">
+                            <p></p>
+                            <p>-</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <p class="lesson-name"></p>
+                    <div class="teachers">
+
+                    </div>
+                </div>
+
+                <div class="schedule-cell">
+                    <div class="schedule-day-time"
+                         data-start="09:45|09:45"
+                         data-end="11:10|11:10">
+                        <div class="schedule-day-time-text">
+                            <p></p>
+                            <p>-</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <p class="lesson-name"></p>
+                    <div class="teachers">
+
+                    </div>
+                </div>
+
+                <div class="schedule-cell">
+                    <div class="schedule-day-time"
+                         data-start="11:45|11:25"
+                         data-end="13:10|12:50">
+                        <div class="schedule-day-time-text">
+                            <p></p>
+                            <p>-</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <p class="lesson-name"></p>
+                    <div class="teachers">
+
+                    </div>
+                </div>
+
+                <div class="schedule-cell">
+                    <div class="schedule-day-time"
+                         data-start="13:30|13:05"
+                         data-end="14:55|14:30">
+                        <div class="schedule-day-time-text">
+                            <p></p>
+                            <p>-</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <p class="lesson-name"></p>
+                    <div class="teachers">
+
+                    </div>
+                </div>
+
+                <div class="schedule-cell">
+                    <div class="schedule-day-time"
+                         data-start="15:05| "
+                         data-end="16:30| ">
+                        <div class="schedule-day-time-text">
+                            <p></p>
+                            <p>-</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <p class="lesson-name"></p>
+                    <div class="teachers">
+
+                    </div>
+                </div>
+                <div class="loader">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="menu-block">
+                <div class="button-menu-block modal-open" id="this">
+                    Информация о аккаунте
+                </div>
+                <div class="button-menu-block" onclick="location.href='/Home/LogOut'">
+                    Выйти
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div class="stub"></div>
+    <div class="modal-info">
+        <table>
+            <tr class="lastname">
+                <td><p>Фамилия</p></td>
+                <td><input value="" readonly /></td>
+            </tr>
+            <tr class="firstname">
+                <td><p>Имя</p></td>
+                <td><input value="" readonly /></td>
+            </tr>
+            <tr class="surname">
+                <td><p>Отчество</p></td>
+                <td><input value="" readonly /></td>
+            </tr>
+            <tr class="status-or-group">
+                <td><p>Статус</p></td>
+                <td><input value="" readonly /></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

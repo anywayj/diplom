@@ -1,0 +1,53 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="stylesheet" href="/Content/Site.css" />
+    <link rel="stylesheet" href="/Content/Index.css" />
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.go').click(function (e) {
+                $.post("/Home/LogIn", {
+                    Login: $('.login').val(),
+                    Password: $('.password').val()
+                }, function (data) {
+                    if (data == "True:Student") {
+                        location.href = '/Student';
+                        return;
+                    }
+                    if (data == "True:Teacher") {
+                        location.href = '/Teacher';
+                        return;
+                    }
+                    $('.error-message .message').text(data);
+                    $('.error-message').css('display', 'block');
+                });
+            });
+            
+        });
+    </script>
+</head>
+<body>
+    <div class="vertical-center">
+        <div class="authorization-logo">
+            <img src="~/img/03.jpg" />
+        </div>
+        <div class="authorization-form">
+            <input type="text" class="login" placeholder="Логин" />
+            <input type="password" class="password" placeholder="Пароль" />
+            <button class="go">Войти</button>
+            <div class="error-message">
+                <p class="message">Ошибка</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
